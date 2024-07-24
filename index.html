@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <!-- Navbar 
+     -->
+    <header class="fixed-top header-scrolled">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">eNno</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Team</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Drop
+                                Down
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Dropdown button
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="btn btn-outline-success me-2" type="button">Get Started</button>
+                        </li>
+                        <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+                    </ul>
+
+                    <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section  -->
+
+    <div class="container row  " id="hero">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1 class="hero-heading">Elegant and creative solutions</h1>
+            <h2 class="hero-tagline">
+                We are the team of talented designers making websites with Bootstrap
+            </h2>
+            <div>
+                <button type="button" class="hero-btn-getstarted btn-lg">
+                    Large button
+                </button>
+                <button type="button" class="hero-btn-watchvideo btn-lg">
+                    <i class="fa-regular fa-circle-play fa-2xl"></i> Watch video
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+            <img src="images/hero-img.png" class="img-fluid" alt="" />
+        </div>
+        <!-- <p>We are team of talented designers and making websites with Bootstrap </p> -->
+    </div>
+
+
+    <!-- first card layout -->
+
+
+    <div class="d-flex  " id="featured-services">
+        <div class="container row justify-content-around ">
+            <div class="col-lg-4 col-md-6 mt-4 mt-md-0 ">
+                <div class=" card-layout-1">
+                    <div class="icon"><i class="fa-solid fa-laptop fa-2xl"></i>
+                    </div>
+                    <h4 class="title">
+                        <a href="">Dolor Sitema</a>
+                    </h4>
+                    <p class="description">
+                        Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                        cupiditate non provident
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4 mt-md-0 ">
+                <div class=" card-layout-1">
+                    <div class="icon"><i class="fa-solid fa-list-check fa-2xl"></i>
+                    </div>
+                    <h4 class="title">
+                        <a href="">Dolor Sitema</a>
+                    </h4>
+                    <p class="description">
+                        Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                        cupiditate non provident
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4 mt-md-0 ">
+                <div class=" card-layout-1">
+                    <div class="icon"><i class="fa-solid fa-tachograph-digital fa-2xl"></i>
+                    </div>
+                    <h4 class="title">
+                        <a href="">Dolor Sitema</a>
+                    </h4>
+                    <p class="description">
+                        Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                        cupiditate non provident
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section  -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/about.png" class="img-fluid " alt="">
+                </div>
+                <div id="about" class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3>Voluptatem dignissimos provident quasi corporis voluptates
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat
+                        </li>
+                        <li><i class="fa-regular fa-circle-check"></i> Duis aute irure dolor in reprehenderit in
+                            voluptate velit
+                        </li>
+                        <li><i class="fa-regular fa-circle-check"></i> llamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda</li>
+
+                    </ul>
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- counter section  -->
+
+    <section class="count" id="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2"
+                        class="purecounter"></span>
+                    <p>clients</p>
+                </div>
+                <div class="col-lg-3 col-6 text-center">
+                    <h1>521</h1>
+                    <p>Projects</p>
+                </div>
+                <div class="col-lg-3 col-6 text-center">
+                    <h1>1463</h1>
+                    <p>House of support</p>
+                </div>
+                <div class="col-lg-3 col-6 text-center">
+                    <h1>15</h1>
+                    <p>Hard workers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- second card layout -->
+
+    <section id="services" class="section-bg">
+        <div class="container">
+            <div class="section-title">
+                <span>SERVICES</span>
+                <h1>SERVICES</h1>
+                <P>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</P>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="fa-brands fa-dribbble fa-2xl"></i></i>
+
+                        </div>
+                        <h4><a href="">Lorem Ipsum</a></h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="fa-regular fa-file fa-2xl"></i>
+                        </div>
+                        <h4><a href="">Sed ut perspiciatis</a></h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="fa-solid fa-gauge-simple-high fa-2xl"></i>
+                        </div>
+                        <h4><a href="">Magni Dolores</a></h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="fa-solid fa-earth-americas fa-2xl"></i>
+                        </div>
+                        <h4><a href="">Nemo Enim</a></h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="fa-solid fa-display fa-2xl"></i>
+                        </div>
+                        <h4><a href="">Dele cardo</a></h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="fa-solid fa-archway fa-2xl"></i>
+                        </div>
+                        <h4><a href="">Divera don</a></h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- nav-tav of portfolio  -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <span>PORTFOLIO</span>
+                <h1>PORTFOLIO</h1>
+                <P>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</P>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-app">App</li>
+                        <li data-filter=".filter-card">Card</li>
+                        <li data-filter=".filter-web">Web</li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" portfolio-container ">
+                <div class="row ">
+                    <!-- first image -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <img src="images/portfolio-1.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <!-- second image -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <img src="images/portfolio-2.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <!-- third image -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <img src="images/portfolio-3.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <!-- fourth image -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <img src="images/portfolio-4.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <!-- fifth image  -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <img src="images/portfolio-5.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <!-- sixth image -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <img src="images/portfolio-6.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <!-- seventh image -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <img src="images/portfolio-7.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <!-- 8th image  -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <img src="images/portfolio-8.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <!-- 9th image -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <img src="images/portfolio-9.jpg" class="img-fluid" alt="">
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <!-- slider -->
+
+    <section id="testimonial">
+        <div class="container">
+            <div class="section-title">
+                <span>TESTIMONIALS</span>
+                <h1>TESTIMONIALS</h1>
+                <P>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</P>
+            </div>
+
+
+
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-card row justify-content-center align-content-center">
+                            <div class="testimonial-item  col-lg-4 col-md-6">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="images/testimonials-1.jpg" class="testimonial-img" alt="">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                            </div>
+                            <div class="testimonial-item col-lg-4 col-md-6">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="images/testimonials-2.jpg" class="testimonial-img" alt="">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                            </div>
+                            <div class="testimonial-item col-lg-4 col-md-6">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="images/testimonials-3.jpg" class="testimonial-img" alt="">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="carousel-card row justify-content-center align-content-center">
+                            <div class="testimonial-item col-lg-4 col-md-6">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="images/testimonials-4.jpg" class="testimonial-img" alt="">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                            </div>
+                            <div class="testimonial-item col-lg-4 col-md-6">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="images/testimonials-5.jpg" class="testimonial-img" alt="">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                            </div>
+                            <div class="testimonial-item col-lg-4 col-md-6">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="images/testimonials-1.jpg" class="testimonial-img" alt="">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="carousel-card row justify-content-center align-content-center">
+                            <div class="testimonial-item col-lg-4 col-md-6">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="images/testimonials-2.jpg" class="testimonial-img" alt="">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                            </div>
+                            <div class="testimonial-item col-lg-4 col-md-6">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="images/testimonials-3.jpg" class="testimonial-img" alt="">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                            </div>
+                            <div class="testimonial-item col-lg-4 col-md-6">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="images/testimonials-4.jpg" class="testimonial-img" alt="">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <div class="carousel-btn">
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            </div>
+            
+        </section> 
+            <!-- call to action  -->
+
+            <section id="cta" class="cta">
+                <div class="container">
+                    <div class="text-center">
+                        <h3>Call To Action</h3>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit
+                            anim id est laborum.</p>
+                        <a class="cta-btn" href="#">Call To Action</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- team section  -->
+            <section class="team" id="team">
+                <div class="container">
+                    <div class="section-title">
+                        <span>TEAM</span>
+                        <h1>TEAM</h1>
+                        <P>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</P>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="member">
+                                <img src="images/team-1.jpg" alt="">
+                                <h4>Walter White</h4>
+                                <span>Chief Executive Officer</span>
+                                <p>
+                                    Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis
+                                    quaerat
+                                    qui aut aut aut
+                                </p>
+                                <div class="">
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="member">
+                                <img src="images/team-2.jpg" alt="">
+                                <h4>Sarah Jhinson</h4>
+                                <span>Product Manager</span>
+                                <p>
+                                    Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto
+                                    rerum rerum
+                                    temporibus
+                                </p>
+                                <div class="">
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="member">
+                                <img src="images/team-3.jpg" alt="">
+                                <h4>William Anderson</h4>
+                                <span>CTO</span>
+                                <p>
+                                    Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et
+                                    laborum toro
+                                    des clara
+                                </p>
+                                <div class="social">
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- contact section -->
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="section-title">
+                        <span>CONTACT</span>
+                        <h1>CONTACT</h1>
+                        <P>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</P>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 d-flex align-items-stretch">
+                            <div class="info">
+                                <div class="address">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <h4>Location:</h4>
+                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                </div>
+
+                                <div class="email">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <h4>Email:</h4>
+                                    <p>info@example.com</p>
+                                </div>
+
+                                <div class="phone">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <h4>Call:</h4>
+                                    <p>+1 5589 55488 55s</p>
+                                </div>
+
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                                    frameborder="0" style="border:0; width: 100%; height: 290px;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" name="name" class="form-control" id="name" required="">
+                                    </div>
+                                    <div class="form-group col-md-6 mt-3 mt-md-0">
+                                        <label for="name">Your Email</label>
+                                        <input type="email" class="form-control" name="email" id="email" required=""
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="name">Subject</label>
+                                    <input type="text" class="form-control" name="subject" id="subject" required="">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="name">Message</label>
+                                    <textarea class="form-control" name="message" rows="10" required=""></textarea>
+                                </div>
+                                <!-- <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message d-block">Error: 404  https://moonlit-tartufo-1d974f.netlify.app/forms/contact.php</div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div> -->
+                                <div class="text-center"><button type="submit">Send Message</button></div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer id="footer">
+                <div class="footer-top">
+                    <div class="container">
+
+                        <div class="row  justify-content-center">
+                            <div class="col-lg-6">
+                                <h3>eNno</h3>
+                                <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime
+                                    saepe
+                                    commodi placeat.</p>
+                            </div>
+                        </div>
+
+                        <div class="row footer-newsletter justify-content-center">
+                            <div class="col-lg-6">
+                                <form action="" method="post">
+                                    <input type="email" name="email" placeholder="Enter your Email"><input type="submit"
+                                        value="Subscribe">
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="fa-brands fa-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="container footer-bottom clearfix">
+                        <div class="copyright">
+                            © Copyright <strong><span>eNno</span></strong>. All Rights Reserved
+                        </div>
+                        <div class="credits">
+
+                            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </footer>
+            <a href="#" class="back-to-top d-flex align-items-center justify-content-center active">
+                <i class="fa-solid fa-arrow-up"></i></a>
+
+
+
+
+
+
+
+
+
+            <!-- Carousel -->
+
+
+
+
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+                integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+            <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+
+</html>
